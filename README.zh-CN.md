@@ -62,7 +62,6 @@
 
 - [`vite-plugin-pages`](https://github.com/hannoeru/vite-plugin-pages) - 以文件系统为基础的路由
 - [`unplugin-auto-import`](https://github.com/antfu/unplugin-auto-import) - 直接使用 Composition API 等，无需导入
-- [`unplugin-vue-components`](https://github.com/antfu/unplugin-vue-components) - 自动加载组件
 - [usehooks-ts](https://usehooks-ts.com/) - 实用的 React Hooks 工具合集
 
 ## 现在可以试试!

@@ -1,22 +1,21 @@
-import { mount } from '@vue/test-utils'
-import { describe, expect, it } from 'vitest'
-import Counter from '../src/components/Counter.vue'
+import { cleanup, fireEvent, render } from '@testing-library/react'
+import { afterEach, describe, expect, it } from 'vitest'
+import Counter from '../src/components/Counter'
 
-describe('Counter.vue', () => {
+describe('Counter', () => {
+  afterEach(cleanup)
+
   it('should render', () => {
-    const wrapper = mount(Counter, { props: { initial: 10 } })
-    expect(wrapper.text()).toContain('10')
-    expect(wrapper.html()).toMatchSnapshot()
+    const { getByText } = render(<Counter initial={10}/>)
+    expect(getByText('10')).toBeDefined()
   })
 
-  it('should be interactive', async () => {
-    const wrapper = mount(Counter, { props: { initial: 0 } })
-    expect(wrapper.text()).toContain('0')
+  it('should be interactive', () => {
+    const { getByText } = render(<Counter initial={0}/>)
+    expect(getByText('0')).toBeDefined()
 
-    expect(wrapper.find('.inc').exists()).toBe(true)
+    fireEvent.click(getByText('+'))
 
-    await wrapper.get('button').trigger('click')
-
-    expect(wrapper.text()).toContain('1')
+    expect(getByText('1')).toBeDefined()
   })
 })

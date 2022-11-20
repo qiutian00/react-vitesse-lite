@@ -1,11 +1,12 @@
 {
   "compilerOptions": {
+    "jsx": "react-jsx",
     "baseUrl": ".",
     "module": "ESNext",
     "target": "es2016",
     "lib": ["DOM", "ESNext"],
     "strict": true,
-    "jsx": "preserve",
+    // "jsx": "preserve",
     "esModuleInterop": true,
     "skipLibCheck": true,
     "moduleResolution": "node",
@@ -16,7 +17,7 @@
     "forceConsistentCasingInFileNames": true,
     "types": [
       "vite/client",
-      "vite-plugin-pages/client"
+      "vite-plugin-pages/client-react"
     ],
     "paths": {
       "~/*": ["src/*"]

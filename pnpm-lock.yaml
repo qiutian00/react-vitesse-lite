@@ -7,7 +7,7 @@ specifiers:
   '@types/node': ^18.11.9
   '@types/react': ^18.0.25
   '@types/react-dom': ^18.0.9
-  '@unocss/reset': ^0.46.5
+  '@unocss/reset': ^0.48.0
   '@vitejs/plugin-react': ^2.0.0
   eslint: ^8.28.0
   jsdom: ^20.0.3
@@ -36,7 +36,7 @@ devDependencies:
   '@types/node': 18.11.9
   '@types/react': 18.0.25
   '@types/react-dom': 18.0.9
-  '@unocss/reset': 0.46.5
+  '@unocss/reset': 0.48.0
   '@vitejs/plugin-react': 2.2.0_vite@3.2.4
   eslint: 8.28.0
   jsdom: 20.0.3
@@ -1045,6 +1045,10 @@ packages:
 
   /@unocss/reset/0.46.5:
     resolution: {integrity: sha512-DU1sisNixEaUsnfDdbU+POaedJLKUtalHnOOce2Txxrcakf7M2/I5/9cRIXt5diVbPjIyoDPcx+7Gn8K0cTGqg==}
+    dev: true
+
+  /@unocss/reset/0.48.0:
+    resolution: {integrity: sha512-i7z6Rbs7fXFD3NdlVJViFltpDJUCo5xDm5y01Xaoa4mJQHr/1335Ht0JW/emAJXf170UYSwb2rUeK1J3fty9eg==}
     dev: true
 
   /@unocss/scope/0.46.5:
